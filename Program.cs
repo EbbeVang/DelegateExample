@@ -13,12 +13,16 @@ namespace DelegateExamples
     class Program
     {
         //used as a dynamic method
+        
         delegate void MyDelegate(string str);
-
+                        //datatype navn
         private static MyDelegate del;
     
         static void Main(string[] args)
         {
+            Calculator calc = new Calculator();
+            Console.WriteLine(calc.Calculators["+"](3,3));
+
             #region delegate
             del = delegate(string str)
             {
