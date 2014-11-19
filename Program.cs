@@ -23,6 +23,11 @@ namespace DelegateExamples
             Calculator calc = new Calculator();
             Console.WriteLine(calc.Calculators["+"](3,3));
 
+            // add modulus to calculator
+            calc.Calculators.Add("%", (d, d1) => d%d1);
+
+            Console.WriteLine(calc.Calculators["%"](45,7));
+
             #region delegate
             del = delegate(string str)
             {

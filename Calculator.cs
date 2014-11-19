@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace DelegateExamples
 {
-    class Calculator
+    public class Calculator
     {
         //definition
         public delegate double calculator(double a, double b);
